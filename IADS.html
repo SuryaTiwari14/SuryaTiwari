@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avionic Display System</title>
+     <!-- Favicons -->
+  <link href="img/apple-touch-icon.png" rel="S picture">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-new-gr-c-s-check-loaded="14.1135.0" data-gr-ext-installed="">
+
+  
+<main>
+<div class="container py-4">
+  <header class="pb-3 mb-4 border-bottom">
+    <a href="index.html" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+      <span class="fs-4">Surya Tiwari</span>
+    </a>
+  </header>
+  <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+    <div class="container-fluid py-5">
+      <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+      <h1 class="display-5 fw-bold" >Avionic Display System</h1>
+      <p class="col-md-8 fs-4" >Display Interfacing &
+        Intercommunication
+        between Two
+        Microcontrollers through
+        RS-422 protocol using
+        Bare Metal Programming</p>
+      </div>
+    </div>
+  </div>
+  <img src="./img/portfolio/Internship_PPT.jpg" class="img-fluid" alt="flowchart">
+      <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+        <h2> Unveiling the Inner Workings: A Closer Look at the Project's Operations</h2>
+        <p>
+          <ul>
+            <li>To establish communication with the peripherals, namely the Vacuum Fluorescent Display
+              (VFD) and Joystick, the necessary GPIO (General-Purpose Input/Output) pins are configured.
+              GPIO pins provide the interface between the microcontroller and external devices. In this case,
+              they enable communication and control between the slave computer and the VFD and Joystick.
+              </li>
+            <li>For debugging purposes, USART communication is utilized to transmit data from the slave
+              computer to a terminal program such as Putty. This enables real-time monitoring and display of
+              the transmitted data, facilitating debugging and analysis of the system.</li>
+            <li>The slave computer is configured to receive and analyze requests from the keyboard and
+              joystick. This involves processing the input signals from the peripherals and interpreting them to
+              determine the corresponding actions or commands to be executed.
+              </li>
+            <li>A Control Block, consisting of a 15-byte packet of data, is sent from the master computer to the
+              slave computer continuously. The Control Block contains instructions and commands to be
+              executed by the slave computer.</li>
+            <li>Conversely, the slave computer sends an 8-byte status block to the master computer. This status
+              block includes important information such as the Echo word (confirmation of received data),
+              keyboard functions, PDU (Power Distribution Unit) status, Discrete word (digital input/output
+              status), Reserved bit, Failure indication, and Checksum for data integrity.</li>
+            <li>On the master computer, the function name and other relevant data are extracted from the
+              received 8-byte status block. This allows the master computer to understand the current status
+              and conditions reported by the slave computer.</li>
+            <li>Based on the received status block, the master computer sends the appropriate commands and
+              instructions within the Control Block to the slave computer. These commands may involve
+              actions to be performed, settings to be changed, or data to be transmitted to external systems.</li>
+            <li>The instructions sent to the slave computer are then displayed on the VFD. The VFD serves as a
+              user interface, providing visual feedback and instructions to the system operator or user</li>
+            <li>Finally, the data accessed by the slave computer is transmitted to an externally connected FPGA
+              (Field-Programmable Gate Array) system. The FPGA system can further process and
+              manipulate the data to perform complex tasks or interface with other external devices.</li>
+          </ul>
+        </p>
+      </div>
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+          <li class="nav-item"><a href="index.html#About" class="nav-link px-2 text-body-secondary">About</a></li>
+          <li class="nav-item"><a href="index.html#Project" class="nav-link px-2 text-body-secondary">Project</a></li>
+          <li class="nav-item"><a href="index.html#Portfolio" class="nav-link px-2 text-body-secondary">Portfolio</a></li>
+          <li class="nav-item"><a href="index.html#Contact" class="nav-link px-2 text-body-secondary">Contact</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 Surya Tiwari</p>
+      </footer>
+  
+</div>
+</main>
+  
+
+</body>
+</html>
